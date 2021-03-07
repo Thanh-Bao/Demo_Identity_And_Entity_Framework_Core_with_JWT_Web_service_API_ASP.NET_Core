@@ -1,2 +1,22 @@
-# Demo_Identity_And_Entity_Framework_Core_with_JWT_Web_service_API_ASP.NET_Core
- Demo Identity And_Entity Framework Core with JWT Web service API ASP.NET Core
+# Demo Identity And Entity Framework Core with JWT Web service API ASP.NET Core
+
+TOOL ==> NUGET PACKAGE ==> NUGET PACKAGE CONSOLE ==> command line install nuget packages
+
+
+Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
+
+Install-Package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+Install-Package Microsoft.AspNetCore.Identity
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore
+
+
+Uninstall-Package Swashbuckle.AspNetCore
+
+
+//Lệnh tạo migration 
+add-migration initial
+//tạo bảng trong database
+update-database
